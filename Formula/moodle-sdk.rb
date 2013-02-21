@@ -20,4 +20,11 @@ class MoodleSdk < Formula
       bin.install_symlink dir+'moodle' => 'mdk'
       bash_completion.install  'extra/bash_completion'
   end
+
+  def caveats; <<-EOS.undent
+    You should install the keyring package, to do this run:
+      $ sudo pip install keyring
+
+    EOS
+  end
 end
