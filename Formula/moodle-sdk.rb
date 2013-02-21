@@ -16,6 +16,7 @@ class MoodleSdk < Formula
       dir.install 'config-dist.json'
       dir.install Dir['moodle-*.py']
       dir.install Dir['lib']
+      dir.install Dir['scripts']
       bin.install_symlink dir+'moodle' => 'mdk'
       bash_completion.install  'extra/bash_completion'
   end
