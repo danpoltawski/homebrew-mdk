@@ -5,8 +5,8 @@ require 'formula'
 
 class MoodleSdk < Formula
   homepage 'https://github.com/FMCorz/mdk/'
-  url 'https://github.com/FMCorz/mdk/archive/master.zip'
-  sha1 'b23686f8b2788b01b7e9b2a4dd0cbfe380cece6b'
+  url 'https://github.com/FMCorz/mdk/archive/v0.3-beta.zip'
+  sha1 '68652abd1a74adf5c5badac5695b8d4c7b309502'
   version '0.3-beta'
 
   def install
