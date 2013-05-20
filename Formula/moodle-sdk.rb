@@ -5,19 +5,19 @@ require 'formula'
 
 class MoodleSdk < Formula
   homepage 'https://github.com/FMCorz/mdk/'
-  url 'https://github.com/FMCorz/mdk/archive/v0.3.zip'
-  sha1 '26240391b0b5558dcec2158fdc52e096c8c9c796'
-  version '0.3'
+  url 'https://github.com/FMCorz/mdk/archive/v0.4.zip'
+  sha1 'b1029db12f7dc8f1802b2e27eb9af3e291c54699'
+  version '0.4'
 
   def install
       dir = (libexec+'moodle-sdk')
       dir.mkpath
-      dir.install 'moodle'
+      dir.install 'mdk.py'
+      dir.install 'version.py'
       dir.install 'config-dist.json'
-      dir.install Dir['moodle-*.py']
       dir.install Dir['lib']
       dir.install Dir['scripts']
-      bin.install_symlink dir+'moodle' => 'mdk'
+      bin.install_symlink dir+'mdk.py' => 'mdk'
       bash_completion.install  'extra/bash_completion'
   end
 
