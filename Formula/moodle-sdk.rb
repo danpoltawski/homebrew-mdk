@@ -12,6 +12,7 @@ class MoodleSdk < Formula
   def install
       dir = (libexec+'moodle-sdk')
       dir.mkpath
+      dir.install 'requirements.txt'
       dir.install 'mdk.py'
       dir.install 'version.py'
       dir.install 'config-dist.json'
@@ -22,8 +23,11 @@ class MoodleSdk < Formula
   end
 
   def caveats; <<-EOS.undent
-    You should install the keyring package, to do this run:
+    You will need to install the some pip depdencies for example, keyring. To do this run:
       $ sudo pip install keyring
+
+    Check for missing depencies by running:
+      $ brew doctor --dependencies
 
     EOS
   end
