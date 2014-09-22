@@ -14,10 +14,7 @@ class MoodleSdk < Formula
       dir.mkpath
       dir.install 'requirements.txt'
       dir.install 'mdk.py'
-      dir.install 'version.py'
-      dir.install 'config-dist.json'
-      dir.install Dir['lib']
-      dir.install Dir['scripts']
+      dir.install Dir['mdk']
       bin.install_symlink dir+'mdk.py' => 'mdk'
       bash_completion.install  'extra/bash_completion'
   end
@@ -27,7 +24,7 @@ class MoodleSdk < Formula
       $ sudo pip install keyring
 
     Check for missing depencies by running:
-      $ brew doctor --dependencies
+      $ mdk doctor --dependencies
 
     EOS
   end
