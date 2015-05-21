@@ -21,7 +21,7 @@ class MoodleSdk < Formula
 
   def caveats; <<-EOS.undent
     You will need to install the some pip depdencies for example, keyring. To do this run:
-      $ sudo pip install keyring
+      $ sudo pip install -r /usr/local/opt/moodle-sdk/libexec/moodle-sdk/requirements.txt
 
     Check for missing depencies by running:
       $ mdk doctor --dependencies
