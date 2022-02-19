@@ -19,7 +19,7 @@ class MoodleSdk < Formula
       bash_completion.install  'extra/bash_completion'
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     You will need to install the some pip dependencies for example, keyring. To do this run:
       $ sudo pip install -r /usr/local/opt/moodle-sdk/libexec/moodle-sdk/requirements.txt
 
