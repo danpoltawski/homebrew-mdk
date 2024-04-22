@@ -5,9 +5,9 @@ require 'formula'
 
 class MoodleSdk < Formula
   homepage 'https://github.com/FMCorz/mdk/'
-  url 'https://github.com/FMCorz/mdk/archive/v2.0.13.zip'
-  sha256 '59761401670352d4ddc850abf956f2286af59ccad6a53849a78cc52c0120b218'
-  version '2.0.13'
+  url 'https://github.com/FMCorz/mdk/archive/v2.0.14.zip'
+  sha256 '21ba57a7ce5e15fbd7568dbef0569b653bf0b7e984947f4a307ac6b5fa181910'
+  version '2.0.14'
 
   def install
       dir = (libexec+'moodle-sdk')
